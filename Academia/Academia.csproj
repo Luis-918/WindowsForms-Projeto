@@ -173,18 +173,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadastro de Professor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cadastro de Professor.Designer.cs">
-      <DependentUpon>Cadastro de Professor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cadastro do Aluno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cadastro do Aluno.Designer.cs">
-      <DependentUpon>Cadastro do Aluno.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO.cs" />
     <Compile Include="Login do Aluno.cs">
       <SubType>Form</SubType>
@@ -198,11 +186,17 @@
     <Compile Include="Login do Professor.Designer.cs">
       <DependentUpon>Login do Professor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Página de Cadastro.cs">
+    <Compile Include="Página 1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Página de Cadastro.Designer.cs">
-      <DependentUpon>Página de Cadastro.cs</DependentUpon>
+    <Compile Include="Página 1.Designer.cs">
+      <DependentUpon>Página 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Página 4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Página 4.Designer.cs">
+      <DependentUpon>Página 4.cs</DependentUpon>
     </Compile>
     <Compile Include="Ínicio.cs">
       <SubType>Form</SubType>
@@ -218,12 +212,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cadastro de Professor.resx">
-      <DependentUpon>Cadastro de Professor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cadastro do Aluno.resx">
-      <DependentUpon>Cadastro do Aluno.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login do Administrador.resx">
       <DependentUpon>Login do Administrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,8 +221,11 @@
     <EmbeddedResource Include="Login do Professor.resx">
       <DependentUpon>Login do Professor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Página de Cadastro.resx">
-      <DependentUpon>Página de Cadastro.cs</DependentUpon>
+    <EmbeddedResource Include="Página 1.resx">
+      <DependentUpon>Página 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Página 4.resx">
+      <DependentUpon>Página 4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ínicio.resx">
       <DependentUpon>Ínicio.cs</DependentUpon>
