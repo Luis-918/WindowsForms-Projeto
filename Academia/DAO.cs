@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MySql.Data.MySqlClient;//Importar os elementos do MySQL
+using System;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;//Importar os elementos do MySQL
 
 namespace Academia
 {
@@ -31,14 +27,24 @@ namespace Academia
             }
         }//fim do construtor
 
-        public string Cadastrar(string nome, decimal peso, string telefone, long cpf, DateTime dataNascimento, string sexo, decimal altura, string objetivo, int planoCodigo)
+        public string Cadastrar(string nome, decimal peso, string telefone, string cpf, DateTime dataNascimento, string sexo, decimal altura, string objetivo, int planoCodigo)
         {
-            string inserir = $"insert into aluno(nome, peso, telefone, CPF, data_nascimento, sexo, altura, objetivo, plano_codigo) values" + $"('', '{nome}', '{peso}', '{telefone}', '{cpf}', '{dataNascimento}', '{sexo}', '{altura}', '{objetivo}', '{planoCodigo}')";
+            string inserir = $"insert into aluno(nome, peso, telefone, CPF, data_nascimento, sexo, altura, objetivo, plano_codigo) values" + "values (@nome, @peso, @telefone, @cpf, @data, @sexo, @altura, @objetivo, @plano)";
 
-            //Começar a executar ele no banco
-            MySqlCommand sql = new MySqlCommand(inserir, this.conexao);
-            string resultado = sql.ExecuteNonQuery() + " Cadastrado!";
-            return resultado;
+            using (MySqlCommand sql = new MySqlCommand(inserir, conexao))
+            {
+                sql.Parameters.AddWithValue("@nome", nome);
+                sql.Parameters.AddWithValue("@peso", peso);
+                sql.Parameters.AddWithValue("@telefone", telefone);
+                sql.Parameters.AddWithValue("@cpf", cpf);
+                sql.Parameters.AddWithValue("@data", dataNascimento);
+                sql.Parameters.AddWithValue("@sexo", sexo);
+                sql.Parameters.AddWithValue("@altura", altura);
+                sql.Parameters.AddWithValue("@objetivo", objetivo);
+                sql.Parameters.AddWithValue("@plano", planoCodigo);
+
+                return sql.ExecuteNonQuery() + " Cadastrado!";
+            }
         }//fim do método cadastrar
 
         public void PreencherVetor()

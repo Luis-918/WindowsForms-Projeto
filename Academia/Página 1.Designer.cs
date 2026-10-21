@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Página_1));
             this.header = new System.Windows.Forms.Panel();
+            this.cadastro_aluno = new System.Windows.Forms.Button();
+            this.login_aluno = new System.Windows.Forms.Button();
             this.ícone = new System.Windows.Forms.PictureBox();
             this.subtítulo_header = new System.Windows.Forms.Label();
             this.página_sublinhada = new System.Windows.Forms.TextBox();
@@ -47,18 +49,16 @@
             this.redes_sociais = new System.Windows.Forms.Label();
             this.título_meio = new System.Windows.Forms.Label();
             this.painel_principal = new System.Windows.Forms.GroupBox();
+            this.botão_painel_3 = new System.Windows.Forms.Button();
+            this.botão_painel_2 = new System.Windows.Forms.Button();
+            this.botão_painel_1 = new System.Windows.Forms.Button();
+            this.demonstração_1 = new System.Windows.Forms.PictureBox();
             this.treinos = new System.Windows.Forms.Label();
             this.treine = new System.Windows.Forms.Label();
             this.bem_vindo = new System.Windows.Forms.Label();
             this.demonstração_2 = new System.Windows.Forms.PictureBox();
             this.demonstração_3 = new System.Windows.Forms.PictureBox();
             this.demonstração_4 = new System.Windows.Forms.PictureBox();
-            this.demonstração_1 = new System.Windows.Forms.PictureBox();
-            this.botão_painel_1 = new System.Windows.Forms.Button();
-            this.botão_painel_2 = new System.Windows.Forms.Button();
-            this.botão_painel_3 = new System.Windows.Forms.Button();
-            this.login_aluno = new System.Windows.Forms.Button();
-            this.cadastro_aluno = new System.Windows.Forms.Button();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ícone)).BeginInit();
             this.footer.SuspendLayout();
@@ -67,10 +67,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.logo_instagram)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).BeginInit();
             this.painel_principal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.demonstração_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demonstração_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demonstração_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.demonstração_4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demonstração_1)).BeginInit();
             this.SuspendLayout();
             // 
             // header
@@ -93,6 +93,30 @@
             this.header.Size = new System.Drawing.Size(1079, 130);
             this.header.TabIndex = 0;
             // 
+            // cadastro_aluno
+            // 
+            this.cadastro_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(12)))));
+            this.cadastro_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastro_aluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.cadastro_aluno.Location = new System.Drawing.Point(932, 24);
+            this.cadastro_aluno.Name = "cadastro_aluno";
+            this.cadastro_aluno.Size = new System.Drawing.Size(132, 27);
+            this.cadastro_aluno.TabIndex = 7;
+            this.cadastro_aluno.Text = "Quero cadastrar";
+            this.cadastro_aluno.UseVisualStyleBackColor = false;
+            // 
+            // login_aluno
+            // 
+            this.login_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
+            this.login_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_aluno.ForeColor = System.Drawing.Color.White;
+            this.login_aluno.Location = new System.Drawing.Point(780, 24);
+            this.login_aluno.Name = "login_aluno";
+            this.login_aluno.Size = new System.Drawing.Size(132, 27);
+            this.login_aluno.TabIndex = 6;
+            this.login_aluno.Text = "Já sou Aluno";
+            this.login_aluno.UseVisualStyleBackColor = false;
+            // 
             // ícone
             // 
             this.ícone.BackColor = System.Drawing.Color.White;
@@ -108,7 +132,7 @@
             this.subtítulo_header.AutoSize = true;
             this.subtítulo_header.Font = new System.Drawing.Font("Arial", 9F);
             this.subtítulo_header.ForeColor = System.Drawing.Color.White;
-            this.subtítulo_header.Location = new System.Drawing.Point(465, 63);
+            this.subtítulo_header.Location = new System.Drawing.Point(472, 63);
             this.subtítulo_header.Name = "subtítulo_header";
             this.subtítulo_header.Size = new System.Drawing.Size(138, 15);
             this.subtítulo_header.TabIndex = 2;
@@ -129,33 +153,36 @@
             this.contato.AutoSize = true;
             this.contato.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
             this.contato.ForeColor = System.Drawing.Color.White;
-            this.contato.Location = new System.Drawing.Point(572, 92);
+            this.contato.Location = new System.Drawing.Point(555, 96);
             this.contato.Name = "contato";
             this.contato.Size = new System.Drawing.Size(71, 21);
             this.contato.TabIndex = 4;
             this.contato.Text = "Contato";
+            this.contato.Click += new System.EventHandler(this.contato_Click);
             // 
             // produtos_serviços
             // 
             this.produtos_serviços.AutoSize = true;
             this.produtos_serviços.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
             this.produtos_serviços.ForeColor = System.Drawing.Color.White;
-            this.produtos_serviços.Location = new System.Drawing.Point(333, 92);
+            this.produtos_serviços.Location = new System.Drawing.Point(333, 96);
             this.produtos_serviços.Name = "produtos_serviços";
             this.produtos_serviços.Size = new System.Drawing.Size(160, 21);
             this.produtos_serviços.TabIndex = 3;
             this.produtos_serviços.Text = "Produtos e Serviços";
+            this.produtos_serviços.Click += new System.EventHandler(this.produtos_serviços_Click);
             // 
             // planos
             // 
             this.planos.AutoSize = true;
             this.planos.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
             this.planos.ForeColor = System.Drawing.Color.White;
-            this.planos.Location = new System.Drawing.Point(212, 92);
+            this.planos.Location = new System.Drawing.Point(212, 96);
             this.planos.Name = "planos";
             this.planos.Size = new System.Drawing.Size(61, 21);
             this.planos.TabIndex = 2;
             this.planos.Text = "Planos";
+            this.planos.Click += new System.EventHandler(this.planos_Click);
             // 
             // página_inicial
             // 
@@ -167,13 +194,14 @@
             this.página_inicial.Size = new System.Drawing.Size(113, 21);
             this.página_inicial.TabIndex = 1;
             this.página_inicial.Text = "Página Inicial";
+            this.página_inicial.Click += new System.EventHandler(this.página_inicial_Click);
             // 
             // título_header
             // 
             this.título_header.AutoSize = true;
             this.título_header.Font = new System.Drawing.Font("Arial", 30F);
             this.título_header.ForeColor = System.Drawing.Color.White;
-            this.título_header.Location = new System.Drawing.Point(398, 8);
+            this.título_header.Location = new System.Drawing.Point(405, 8);
             this.título_header.Name = "título_header";
             this.título_header.Size = new System.Drawing.Size(264, 45);
             this.título_header.TabIndex = 0;
@@ -289,6 +317,48 @@
             this.painel_principal.TabStop = false;
             this.painel_principal.Text = "groupBox1";
             // 
+            // botão_painel_3
+            // 
+            this.botão_painel_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(240)))));
+            this.botão_painel_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(106)))), ((int)(((byte)(28)))));
+            this.botão_painel_3.Location = new System.Drawing.Point(452, 139);
+            this.botão_painel_3.Name = "botão_painel_3";
+            this.botão_painel_3.Size = new System.Drawing.Size(180, 30);
+            this.botão_painel_3.TabIndex = 6;
+            this.botão_painel_3.Text = "Ambiente acolhedor";
+            this.botão_painel_3.UseVisualStyleBackColor = false;
+            // 
+            // botão_painel_2
+            // 
+            this.botão_painel_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(240)))));
+            this.botão_painel_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(106)))), ((int)(((byte)(28)))));
+            this.botão_painel_2.Location = new System.Drawing.Point(241, 139);
+            this.botão_painel_2.Name = "botão_painel_2";
+            this.botão_painel_2.Size = new System.Drawing.Size(180, 30);
+            this.botão_painel_2.TabIndex = 5;
+            this.botão_painel_2.Text = "Recuperação ativa";
+            this.botão_painel_2.UseVisualStyleBackColor = false;
+            // 
+            // botão_painel_1
+            // 
+            this.botão_painel_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(106)))), ((int)(((byte)(28)))));
+            this.botão_painel_1.ForeColor = System.Drawing.Color.White;
+            this.botão_painel_1.Location = new System.Drawing.Point(20, 139);
+            this.botão_painel_1.Name = "botão_painel_1";
+            this.botão_painel_1.Size = new System.Drawing.Size(180, 30);
+            this.botão_painel_1.TabIndex = 4;
+            this.botão_painel_1.Text = "Treinos guiados";
+            this.botão_painel_1.UseVisualStyleBackColor = false;
+            // 
+            // demonstração_1
+            // 
+            this.demonstração_1.BackColor = System.Drawing.Color.White;
+            this.demonstração_1.Location = new System.Drawing.Point(728, 10);
+            this.demonstração_1.Name = "demonstração_1";
+            this.demonstração_1.Size = new System.Drawing.Size(200, 170);
+            this.demonstração_1.TabIndex = 3;
+            this.demonstração_1.TabStop = false;
+            // 
             // treinos
             // 
             this.treinos.AutoSize = true;
@@ -350,72 +420,6 @@
             this.demonstração_4.TabIndex = 6;
             this.demonstração_4.TabStop = false;
             // 
-            // demonstração_1
-            // 
-            this.demonstração_1.BackColor = System.Drawing.Color.White;
-            this.demonstração_1.Location = new System.Drawing.Point(728, 10);
-            this.demonstração_1.Name = "demonstração_1";
-            this.demonstração_1.Size = new System.Drawing.Size(200, 170);
-            this.demonstração_1.TabIndex = 3;
-            this.demonstração_1.TabStop = false;
-            // 
-            // botão_painel_1
-            // 
-            this.botão_painel_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(106)))), ((int)(((byte)(28)))));
-            this.botão_painel_1.ForeColor = System.Drawing.Color.White;
-            this.botão_painel_1.Location = new System.Drawing.Point(20, 139);
-            this.botão_painel_1.Name = "botão_painel_1";
-            this.botão_painel_1.Size = new System.Drawing.Size(180, 30);
-            this.botão_painel_1.TabIndex = 4;
-            this.botão_painel_1.Text = "Treinos guiados";
-            this.botão_painel_1.UseVisualStyleBackColor = false;
-            // 
-            // botão_painel_2
-            // 
-            this.botão_painel_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(240)))));
-            this.botão_painel_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(106)))), ((int)(((byte)(28)))));
-            this.botão_painel_2.Location = new System.Drawing.Point(241, 139);
-            this.botão_painel_2.Name = "botão_painel_2";
-            this.botão_painel_2.Size = new System.Drawing.Size(180, 30);
-            this.botão_painel_2.TabIndex = 5;
-            this.botão_painel_2.Text = "Recuperação ativa";
-            this.botão_painel_2.UseVisualStyleBackColor = false;
-            // 
-            // botão_painel_3
-            // 
-            this.botão_painel_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(247)))), ((int)(((byte)(240)))));
-            this.botão_painel_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(106)))), ((int)(((byte)(28)))));
-            this.botão_painel_3.Location = new System.Drawing.Point(452, 139);
-            this.botão_painel_3.Name = "botão_painel_3";
-            this.botão_painel_3.Size = new System.Drawing.Size(180, 30);
-            this.botão_painel_3.TabIndex = 6;
-            this.botão_painel_3.Text = "Ambiente acolhedor";
-            this.botão_painel_3.UseVisualStyleBackColor = false;
-            // 
-            // login_aluno
-            // 
-            this.login_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
-            this.login_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_aluno.ForeColor = System.Drawing.Color.White;
-            this.login_aluno.Location = new System.Drawing.Point(780, 24);
-            this.login_aluno.Name = "login_aluno";
-            this.login_aluno.Size = new System.Drawing.Size(132, 27);
-            this.login_aluno.TabIndex = 6;
-            this.login_aluno.Text = "Já sou Aluno";
-            this.login_aluno.UseVisualStyleBackColor = false;
-            // 
-            // cadastro_aluno
-            // 
-            this.cadastro_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(12)))));
-            this.cadastro_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadastro_aluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.cadastro_aluno.Location = new System.Drawing.Point(932, 24);
-            this.cadastro_aluno.Name = "cadastro_aluno";
-            this.cadastro_aluno.Size = new System.Drawing.Size(132, 27);
-            this.cadastro_aluno.TabIndex = 7;
-            this.cadastro_aluno.Text = "Quero cadastrar";
-            this.cadastro_aluno.UseVisualStyleBackColor = false;
-            // 
             // Página_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -446,10 +450,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).EndInit();
             this.painel_principal.ResumeLayout(false);
             this.painel_principal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.demonstração_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.demonstração_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.demonstração_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.demonstração_4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.demonstração_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

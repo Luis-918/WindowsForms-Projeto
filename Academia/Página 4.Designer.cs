@@ -1,6 +1,6 @@
 ﻿namespace Academia
 {
-    partial class Página_4
+    partial class contatos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Página_4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(contatos));
             this.header = new System.Windows.Forms.Panel();
             this.cadastro_aluno = new System.Windows.Forms.Button();
             this.login_aluno = new System.Windows.Forms.Button();
@@ -47,6 +47,24 @@
             this.logo_instagram = new System.Windows.Forms.PictureBox();
             this.logo_facebook = new System.Windows.Forms.PictureBox();
             this.redes_sociais = new System.Windows.Forms.Label();
+            this.caixa_mensagem = new System.Windows.Forms.GroupBox();
+            this.título_contato = new System.Windows.Forms.Label();
+            this.subtítulo_contato = new System.Windows.Forms.Label();
+            this.caixa_localização = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.inserir_nome_contato = new System.Windows.Forms.Label();
+            this.inserir_email_contato = new System.Windows.Forms.Label();
+            this.inserir_mensagem_contato = new System.Windows.Forms.Label();
+            this.envie_mensagem_contato = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.endereço_contato = new System.Windows.Forms.Label();
+            this.onde_encontrar_contato = new System.Windows.Forms.Label();
+            this.CEP_contato = new System.Windows.Forms.Label();
+            this.telefone_contato = new System.Windows.Forms.Label();
+            this.email_contato = new System.Windows.Forms.Label();
+            this.mapa_contato = new System.Windows.Forms.WebBrowser();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ícone)).BeginInit();
             this.footer.SuspendLayout();
@@ -54,6 +72,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.logo_twitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_instagram)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).BeginInit();
+            this.caixa_mensagem.SuspendLayout();
+            this.caixa_localização.SuspendLayout();
             this.SuspendLayout();
             // 
             // header
@@ -115,7 +135,7 @@
             this.subtítulo_header.AutoSize = true;
             this.subtítulo_header.Font = new System.Drawing.Font("Arial", 9F);
             this.subtítulo_header.ForeColor = System.Drawing.Color.White;
-            this.subtítulo_header.Location = new System.Drawing.Point(465, 63);
+            this.subtítulo_header.Location = new System.Drawing.Point(474, 63);
             this.subtítulo_header.Name = "subtítulo_header";
             this.subtítulo_header.Size = new System.Drawing.Size(138, 15);
             this.subtítulo_header.TabIndex = 2;
@@ -126,9 +146,9 @@
             this.página_sublinhada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
             this.página_sublinhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.página_sublinhada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
-            this.página_sublinhada.Location = new System.Drawing.Point(550, 120);
+            this.página_sublinhada.Location = new System.Drawing.Point(553, 120);
             this.página_sublinhada.Name = "página_sublinhada";
-            this.página_sublinhada.Size = new System.Drawing.Size(118, 9);
+            this.página_sublinhada.Size = new System.Drawing.Size(73, 9);
             this.página_sublinhada.TabIndex = 2;
             // 
             // contato
@@ -136,33 +156,36 @@
             this.contato.AutoSize = true;
             this.contato.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
             this.contato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
-            this.contato.Location = new System.Drawing.Point(572, 92);
+            this.contato.Location = new System.Drawing.Point(555, 96);
             this.contato.Name = "contato";
             this.contato.Size = new System.Drawing.Size(71, 21);
             this.contato.TabIndex = 4;
             this.contato.Text = "Contato";
+            this.contato.Click += new System.EventHandler(this.contato_Click);
             // 
             // produtos_serviços
             // 
             this.produtos_serviços.AutoSize = true;
             this.produtos_serviços.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
             this.produtos_serviços.ForeColor = System.Drawing.Color.White;
-            this.produtos_serviços.Location = new System.Drawing.Point(333, 92);
+            this.produtos_serviços.Location = new System.Drawing.Point(333, 96);
             this.produtos_serviços.Name = "produtos_serviços";
             this.produtos_serviços.Size = new System.Drawing.Size(160, 21);
             this.produtos_serviços.TabIndex = 3;
             this.produtos_serviços.Text = "Produtos e Serviços";
+            this.produtos_serviços.Click += new System.EventHandler(this.produtos_serviços_Click);
             // 
             // planos
             // 
             this.planos.AutoSize = true;
             this.planos.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
             this.planos.ForeColor = System.Drawing.Color.White;
-            this.planos.Location = new System.Drawing.Point(212, 92);
+            this.planos.Location = new System.Drawing.Point(212, 96);
             this.planos.Name = "planos";
             this.planos.Size = new System.Drawing.Size(61, 21);
             this.planos.TabIndex = 2;
             this.planos.Text = "Planos";
+            this.planos.Click += new System.EventHandler(this.planos_Click);
             // 
             // página_inicial
             // 
@@ -174,13 +197,14 @@
             this.página_inicial.Size = new System.Drawing.Size(113, 21);
             this.página_inicial.TabIndex = 1;
             this.página_inicial.Text = "Página Inicial";
+            this.página_inicial.Click += new System.EventHandler(this.página_inicial_Click);
             // 
             // título_header
             // 
             this.título_header.AutoSize = true;
             this.título_header.Font = new System.Drawing.Font("Arial", 30F);
             this.título_header.ForeColor = System.Drawing.Color.White;
-            this.título_header.Location = new System.Drawing.Point(398, 8);
+            this.título_header.Location = new System.Drawing.Point(407, 8);
             this.título_header.Name = "título_header";
             this.título_header.Size = new System.Drawing.Size(264, 45);
             this.título_header.TabIndex = 0;
@@ -266,18 +290,220 @@
             this.redes_sociais.TabIndex = 0;
             this.redes_sociais.Text = "Redes Sociais";
             // 
-            // Página_4
+            // caixa_mensagem
+            // 
+            this.caixa_mensagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.caixa_mensagem.Controls.Add(this.button1);
+            this.caixa_mensagem.Controls.Add(this.envie_mensagem_contato);
+            this.caixa_mensagem.Controls.Add(this.inserir_mensagem_contato);
+            this.caixa_mensagem.Controls.Add(this.inserir_email_contato);
+            this.caixa_mensagem.Controls.Add(this.inserir_nome_contato);
+            this.caixa_mensagem.Controls.Add(this.textBox3);
+            this.caixa_mensagem.Controls.Add(this.textBox2);
+            this.caixa_mensagem.Controls.Add(this.textBox1);
+            this.caixa_mensagem.ForeColor = System.Drawing.Color.White;
+            this.caixa_mensagem.Location = new System.Drawing.Point(31, 229);
+            this.caixa_mensagem.Name = "caixa_mensagem";
+            this.caixa_mensagem.Size = new System.Drawing.Size(495, 353);
+            this.caixa_mensagem.TabIndex = 3;
+            this.caixa_mensagem.TabStop = false;
+            this.caixa_mensagem.Text = "Caixa de Mensagem";
+            // 
+            // título_contato
+            // 
+            this.título_contato.AutoSize = true;
+            this.título_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.título_contato.ForeColor = System.Drawing.Color.White;
+            this.título_contato.Location = new System.Drawing.Point(26, 147);
+            this.título_contato.Name = "título_contato";
+            this.título_contato.Size = new System.Drawing.Size(262, 26);
+            this.título_contato.TabIndex = 4;
+            this.título_contato.Text = "Fale com a Academy City";
+            // 
+            // subtítulo_contato
+            // 
+            this.subtítulo_contato.AutoSize = true;
+            this.subtítulo_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.subtítulo_contato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.subtítulo_contato.Location = new System.Drawing.Point(28, 189);
+            this.subtítulo_contato.Name = "subtítulo_contato";
+            this.subtítulo_contato.Size = new System.Drawing.Size(498, 18);
+            this.subtítulo_contato.TabIndex = 5;
+            this.subtítulo_contato.Text = "Tire suas dúvidas sobre a academia e encontre nossos canais de contato.";
+            // 
+            // caixa_localização
+            // 
+            this.caixa_localização.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.caixa_localização.Controls.Add(this.mapa_contato);
+            this.caixa_localização.Controls.Add(this.email_contato);
+            this.caixa_localização.Controls.Add(this.telefone_contato);
+            this.caixa_localização.Controls.Add(this.CEP_contato);
+            this.caixa_localização.Controls.Add(this.onde_encontrar_contato);
+            this.caixa_localização.Controls.Add(this.endereço_contato);
+            this.caixa_localização.ForeColor = System.Drawing.Color.White;
+            this.caixa_localização.Location = new System.Drawing.Point(551, 229);
+            this.caixa_localização.Name = "caixa_localização";
+            this.caixa_localização.Size = new System.Drawing.Size(495, 353);
+            this.caixa_localização.TabIndex = 6;
+            this.caixa_localização.TabStop = false;
+            this.caixa_localização.Text = "Caixa de Localização";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(20, 80);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(457, 29);
+            this.textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(20, 148);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(457, 29);
+            this.textBox2.TabIndex = 1;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F);
+            this.textBox3.ForeColor = System.Drawing.Color.White;
+            this.textBox3.Location = new System.Drawing.Point(20, 220);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(457, 75);
+            this.textBox3.TabIndex = 2;
+            // 
+            // inserir_nome_contato
+            // 
+            this.inserir_nome_contato.AutoSize = true;
+            this.inserir_nome_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.inserir_nome_contato.Location = new System.Drawing.Point(17, 60);
+            this.inserir_nome_contato.Name = "inserir_nome_contato";
+            this.inserir_nome_contato.Size = new System.Drawing.Size(49, 17);
+            this.inserir_nome_contato.TabIndex = 3;
+            this.inserir_nome_contato.Text = "Nome:";
+            // 
+            // inserir_email_contato
+            // 
+            this.inserir_email_contato.AutoSize = true;
+            this.inserir_email_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.inserir_email_contato.Location = new System.Drawing.Point(17, 128);
+            this.inserir_email_contato.Name = "inserir_email_contato";
+            this.inserir_email_contato.Size = new System.Drawing.Size(46, 17);
+            this.inserir_email_contato.TabIndex = 4;
+            this.inserir_email_contato.Text = "Email:";
+            // 
+            // inserir_mensagem_contato
+            // 
+            this.inserir_mensagem_contato.AutoSize = true;
+            this.inserir_mensagem_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.inserir_mensagem_contato.Location = new System.Drawing.Point(17, 200);
+            this.inserir_mensagem_contato.Name = "inserir_mensagem_contato";
+            this.inserir_mensagem_contato.Size = new System.Drawing.Size(81, 17);
+            this.inserir_mensagem_contato.TabIndex = 5;
+            this.inserir_mensagem_contato.Text = "Mensagem:";
+            // 
+            // envie_mensagem_contato
+            // 
+            this.envie_mensagem_contato.AutoSize = true;
+            this.envie_mensagem_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.envie_mensagem_contato.Location = new System.Drawing.Point(16, 30);
+            this.envie_mensagem_contato.Name = "envie_mensagem_contato";
+            this.envie_mensagem_contato.Size = new System.Drawing.Size(161, 20);
+            this.envie_mensagem_contato.TabIndex = 9;
+            this.envie_mensagem_contato.Text = "Envie sua mensagem";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(164)))), ((int)(((byte)(28)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(20, 312);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 26);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "→ Enviar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // endereço_contato
+            // 
+            this.endereço_contato.AutoSize = true;
+            this.endereço_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.endereço_contato.Location = new System.Drawing.Point(6, 228);
+            this.endereço_contato.Name = "endereço_contato";
+            this.endereço_contato.Size = new System.Drawing.Size(465, 18);
+            this.endereço_contato.TabIndex = 0;
+            this.endereço_contato.Text = "Endereço: Rua das Acácias, 157 — Jardim Primavera, São Paulo – SP";
+            // 
+            // onde_encontrar_contato
+            // 
+            this.onde_encontrar_contato.AutoSize = true;
+            this.onde_encontrar_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.onde_encontrar_contato.Location = new System.Drawing.Point(16, 30);
+            this.onde_encontrar_contato.Name = "onde_encontrar_contato";
+            this.onde_encontrar_contato.Size = new System.Drawing.Size(150, 20);
+            this.onde_encontrar_contato.TabIndex = 1;
+            this.onde_encontrar_contato.Text = "Onde nos encontrar";
+            // 
+            // CEP_contato
+            // 
+            this.CEP_contato.AutoSize = true;
+            this.CEP_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.CEP_contato.Location = new System.Drawing.Point(6, 255);
+            this.CEP_contato.Name = "CEP_contato";
+            this.CEP_contato.Size = new System.Drawing.Size(116, 18);
+            this.CEP_contato.TabIndex = 2;
+            this.CEP_contato.Text = "CEP: 01234-567";
+            // 
+            // telefone_contato
+            // 
+            this.telefone_contato.AutoSize = true;
+            this.telefone_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.telefone_contato.Location = new System.Drawing.Point(6, 285);
+            this.telefone_contato.Name = "telefone_contato";
+            this.telefone_contato.Size = new System.Drawing.Size(180, 18);
+            this.telefone_contato.TabIndex = 3;
+            this.telefone_contato.Text = "Telefone: (11) 91234-5678";
+            // 
+            // email_contato
+            // 
+            this.email_contato.AutoSize = true;
+            this.email_contato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.email_contato.Location = new System.Drawing.Point(6, 312);
+            this.email_contato.Name = "email_contato";
+            this.email_contato.Size = new System.Drawing.Size(219, 18);
+            this.email_contato.TabIndex = 4;
+            this.email_contato.Text = "Email: emailoriginal@gmail.com";
+            // 
+            // mapa_contato
+            // 
+            this.mapa_contato.Location = new System.Drawing.Point(9, 66);
+            this.mapa_contato.MinimumSize = new System.Drawing.Size(20, 20);
+            this.mapa_contato.Name = "mapa_contato";
+            this.mapa_contato.Size = new System.Drawing.Size(475, 150);
+            this.mapa_contato.TabIndex = 5;
+            // 
+            // contatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(1079, 691);
+            this.Controls.Add(this.caixa_localização);
+            this.Controls.Add(this.subtítulo_contato);
+            this.Controls.Add(this.título_contato);
+            this.Controls.Add(this.caixa_mensagem);
             this.Controls.Add(this.footer);
             this.Controls.Add(this.header);
             this.MaximumSize = new System.Drawing.Size(1095, 730);
             this.MinimumSize = new System.Drawing.Size(1095, 730);
-            this.Name = "Página_4";
+            this.Name = "contatos";
             this.Text = "Página_4";
+            this.Load += new System.EventHandler(this.contatos_Load);
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ícone)).EndInit();
@@ -287,7 +513,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.logo_twitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_instagram)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).EndInit();
+            this.caixa_mensagem.ResumeLayout(false);
+            this.caixa_mensagem.PerformLayout();
+            this.caixa_localização.ResumeLayout(false);
+            this.caixa_localização.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -311,5 +542,23 @@
         private System.Windows.Forms.PictureBox logo_instagram;
         private System.Windows.Forms.PictureBox logo_facebook;
         private System.Windows.Forms.Label redes_sociais;
+        private System.Windows.Forms.GroupBox caixa_mensagem;
+        private System.Windows.Forms.Label título_contato;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label subtítulo_contato;
+        private System.Windows.Forms.GroupBox caixa_localização;
+        private System.Windows.Forms.Label inserir_mensagem_contato;
+        private System.Windows.Forms.Label inserir_email_contato;
+        private System.Windows.Forms.Label inserir_nome_contato;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label envie_mensagem_contato;
+        private System.Windows.Forms.Label endereço_contato;
+        private System.Windows.Forms.Label onde_encontrar_contato;
+        private System.Windows.Forms.Label email_contato;
+        private System.Windows.Forms.Label telefone_contato;
+        private System.Windows.Forms.Label CEP_contato;
+        private System.Windows.Forms.WebBrowser mapa_contato;
     }
 }
