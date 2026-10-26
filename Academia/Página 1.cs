@@ -55,7 +55,7 @@ namespace Academia
 
         private void login_aluno_Click(object sender, EventArgs e)
         {
-
+            Navegacao.IrPara<Página_Login>(this);
         }
     }//fim da classe
 }//fim do projeto

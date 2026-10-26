@@ -173,8 +173,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administração de Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administração de Cadastro.Designer.cs">
+      <DependentUpon>Administração de Cadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Aluno.cs" />
+    <Compile Include="Administração de Consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administração de Consultar.Designer.cs">
+      <DependentUpon>Administração de Consultar.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO.cs" />
+    <Compile Include="Exclusão.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exclusão.Designer.cs">
+      <DependentUpon>Exclusão.cs</DependentUpon>
+    </Compile>
     <Compile Include="Navegacao.cs" />
     <Compile Include="Página 1.cs">
       <SubType>Form</SubType>
@@ -220,6 +238,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administração de Cadastro.resx">
+      <DependentUpon>Administração de Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administração de Consultar.resx">
+      <DependentUpon>Administração de Consultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exclusão.resx">
+      <DependentUpon>Exclusão.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Página 1.resx">
       <DependentUpon>Página 1.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Academia.Academia;
+using MySql.Data.MySqlClient;//Importar os elementos do MySQL
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;//Importar os elementos do MySQL
 
 namespace Academia
 {
@@ -30,6 +31,11 @@ namespace Academia
         private void botão_login_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void botão_cadastro_Click(object sender, EventArgs e)
+        {
+            Navegacao.IrPara<Página_Cadastro1>(this);
         }
     }//fim da classe
 }//fim do projeto
