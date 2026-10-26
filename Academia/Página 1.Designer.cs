@@ -104,6 +104,7 @@
             this.cadastro_aluno.TabIndex = 7;
             this.cadastro_aluno.Text = "Quero cadastrar";
             this.cadastro_aluno.UseVisualStyleBackColor = false;
+            this.cadastro_aluno.Click += new System.EventHandler(this.cadastro_aluno_Click);
             // 
             // login_aluno
             // 
@@ -116,6 +117,7 @@
             this.login_aluno.TabIndex = 6;
             this.login_aluno.Text = "Já sou Aluno";
             this.login_aluno.UseVisualStyleBackColor = false;
+            this.login_aluno.Click += new System.EventHandler(this.login_aluno_Click);
             // 
             // ícone
             // 
@@ -353,9 +355,11 @@
             // demonstração_1
             // 
             this.demonstração_1.BackColor = System.Drawing.Color.White;
-            this.demonstração_1.Location = new System.Drawing.Point(728, 10);
+            this.demonstração_1.Image = ((System.Drawing.Image)(resources.GetObject("demonstração_1.Image")));
+            this.demonstração_1.Location = new System.Drawing.Point(717, 11);
             this.demonstração_1.Name = "demonstração_1";
-            this.demonstração_1.Size = new System.Drawing.Size(200, 170);
+            this.demonstração_1.Size = new System.Drawing.Size(210, 170);
+            this.demonstração_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.demonstração_1.TabIndex = 3;
             this.demonstração_1.TabStop = false;
             // 
@@ -396,27 +400,33 @@
             // demonstração_2
             // 
             this.demonstração_2.BackColor = System.Drawing.Color.White;
-            this.demonstração_2.Location = new System.Drawing.Point(84, 395);
+            this.demonstração_2.Image = ((System.Drawing.Image)(resources.GetObject("demonstração_2.Image")));
+            this.demonstração_2.Location = new System.Drawing.Point(84, 385);
             this.demonstração_2.Name = "demonstração_2";
-            this.demonstração_2.Size = new System.Drawing.Size(275, 200);
+            this.demonstração_2.Size = new System.Drawing.Size(275, 210);
+            this.demonstração_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.demonstração_2.TabIndex = 4;
             this.demonstração_2.TabStop = false;
             // 
             // demonstração_3
             // 
             this.demonstração_3.BackColor = System.Drawing.Color.White;
-            this.demonstração_3.Location = new System.Drawing.Point(414, 395);
+            this.demonstração_3.Image = ((System.Drawing.Image)(resources.GetObject("demonstração_3.Image")));
+            this.demonstração_3.Location = new System.Drawing.Point(414, 385);
             this.demonstração_3.Name = "demonstração_3";
-            this.demonstração_3.Size = new System.Drawing.Size(275, 200);
+            this.demonstração_3.Size = new System.Drawing.Size(275, 210);
+            this.demonstração_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.demonstração_3.TabIndex = 5;
             this.demonstração_3.TabStop = false;
             // 
             // demonstração_4
             // 
             this.demonstração_4.BackColor = System.Drawing.Color.White;
-            this.demonstração_4.Location = new System.Drawing.Point(744, 395);
+            this.demonstração_4.Image = ((System.Drawing.Image)(resources.GetObject("demonstração_4.Image")));
+            this.demonstração_4.Location = new System.Drawing.Point(744, 385);
             this.demonstração_4.Name = "demonstração_4";
-            this.demonstração_4.Size = new System.Drawing.Size(275, 200);
+            this.demonstração_4.Size = new System.Drawing.Size(275, 210);
+            this.demonstração_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.demonstração_4.TabIndex = 6;
             this.demonstração_4.TabStop = false;
             // 

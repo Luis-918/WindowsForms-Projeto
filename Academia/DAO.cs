@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Academia
 {
-    class DAO
+    public class DAO
     {
         public MySqlConnection conexao;//Armazenar os parâmetros de configuração com o BD
         public int[] codigo;
@@ -29,7 +29,9 @@ namespace Academia
 
         public string Cadastrar(string nome, decimal peso, string telefone, string cpf, DateTime dataNascimento, string sexo, decimal altura, string objetivo, int planoCodigo)
         {
-            string inserir = $"insert into aluno(nome, peso, telefone, CPF, data_nascimento, sexo, altura, objetivo, plano_codigo) values" + "values (@nome, @peso, @telefone, @cpf, @data, @sexo, @altura, @objetivo, @plano)";
+            string inserir = "insert into aluno " +
+                "(nome, peso, telefone, CPF, data_nascimento, sexo, altura, objetivo, plano_codigo) " +
+                "values (@nome, @peso, @telefone, @cpf, @data, @sexo, @altura, @objetivo, @plano)";
 
             using (MySqlCommand sql = new MySqlCommand(inserir, conexao))
             {

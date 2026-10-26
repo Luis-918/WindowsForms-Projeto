@@ -47,5 +47,15 @@ namespace Academia
         {
             Navegacao.IrPara<contatos>(this);
         }
-    }
-}
+
+        private void cadastro_aluno_Click(object sender, EventArgs e)
+        {
+            Navegacao.IrPara<Página_Cadastro1>(this);
+        }
+
+        private void login_aluno_Click(object sender, EventArgs e)
+        {
+
+        }
+    }//fim da classe
+}//fim do projeto

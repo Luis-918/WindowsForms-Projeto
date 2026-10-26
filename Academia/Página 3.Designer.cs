@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Página_3));
             this.header = new System.Windows.Forms.Panel();
+            this.página_sublinhada = new System.Windows.Forms.TextBox();
+            this.produtos_serviços = new System.Windows.Forms.Label();
             this.cadastro_aluno = new System.Windows.Forms.Button();
             this.login_aluno = new System.Windows.Forms.Button();
             this.ícone = new System.Windows.Forms.PictureBox();
@@ -45,8 +47,6 @@
             this.logo_instagram = new System.Windows.Forms.PictureBox();
             this.logo_facebook = new System.Windows.Forms.PictureBox();
             this.redes_sociais = new System.Windows.Forms.Label();
-            this.página_sublinhada = new System.Windows.Forms.TextBox();
-            this.produtos_serviços = new System.Windows.Forms.Label();
             this.imagem_produto1 = new System.Windows.Forms.PictureBox();
             this.imagem_produto2 = new System.Windows.Forms.PictureBox();
             this.botão_comprar1 = new System.Windows.Forms.Button();
@@ -60,29 +60,34 @@
             this.adicionar_carrinho4 = new System.Windows.Forms.Button();
             this.adicionar_carrinho5 = new System.Windows.Forms.Button();
             this.caixa_produto1 = new System.Windows.Forms.GroupBox();
+            this.preço_produto1 = new System.Windows.Forms.Label();
+            this.subtítulo_produto1 = new System.Windows.Forms.Label();
             this.título_produto1 = new System.Windows.Forms.Label();
             this.caixa_produto2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.subtítulo_produto2 = new System.Windows.Forms.Label();
+            this.título_produto2 = new System.Windows.Forms.Label();
             this.caixa_produto3 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.subtítulo_produto3 = new System.Windows.Forms.Label();
+            this.título_produto3 = new System.Windows.Forms.Label();
             this.imagem_produto3 = new System.Windows.Forms.PictureBox();
             this.caixa_produto4 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.subtítulo_produto4 = new System.Windows.Forms.Label();
+            this.título_produto4 = new System.Windows.Forms.Label();
             this.imagem_produto4 = new System.Windows.Forms.PictureBox();
             this.caixa_produto5 = new System.Windows.Forms.GroupBox();
-            this.imagem_produto5 = new System.Windows.Forms.PictureBox();
-            this.título_produto2 = new System.Windows.Forms.Label();
-            this.título_produto3 = new System.Windows.Forms.Label();
-            this.título_produto4 = new System.Windows.Forms.Label();
-            this.título_produto5 = new System.Windows.Forms.Label();
-            this.botão_próxima_página = new System.Windows.Forms.Button();
-            this.subtítulo_produto1 = new System.Windows.Forms.Label();
-            this.subtítulo_produto2 = new System.Windows.Forms.Label();
-            this.subtítulo_produto3 = new System.Windows.Forms.Label();
-            this.subtítulo_produto4 = new System.Windows.Forms.Label();
-            this.subtítulo_produto5 = new System.Windows.Forms.Label();
-            this.preço_produto1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.subtítulo_produto5 = new System.Windows.Forms.Label();
+            this.título_produto5 = new System.Windows.Forms.Label();
+            this.imagem_produto5 = new System.Windows.Forms.PictureBox();
+            this.botão_próxima_página = new System.Windows.Forms.Button();
+            this.botão_paginação1 = new System.Windows.Forms.Button();
+            this.botão_paginação2 = new System.Windows.Forms.Button();
+            this.botão_paginação3 = new System.Windows.Forms.Button();
+            this.botão_paginação4 = new System.Windows.Forms.Button();
+            this.botão_paginação5 = new System.Windows.Forms.Button();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ícone)).BeginInit();
             this.footer.SuspendLayout();
@@ -121,6 +126,28 @@
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(1079, 130);
             this.header.TabIndex = 1;
+            // 
+            // página_sublinhada
+            // 
+            this.página_sublinhada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
+            this.página_sublinhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
+            this.página_sublinhada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
+            this.página_sublinhada.Location = new System.Drawing.Point(335, 120);
+            this.página_sublinhada.Name = "página_sublinhada";
+            this.página_sublinhada.Size = new System.Drawing.Size(156, 9);
+            this.página_sublinhada.TabIndex = 8;
+            // 
+            // produtos_serviços
+            // 
+            this.produtos_serviços.AutoSize = true;
+            this.produtos_serviços.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
+            this.produtos_serviços.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
+            this.produtos_serviços.Location = new System.Drawing.Point(333, 96);
+            this.produtos_serviços.Name = "produtos_serviços";
+            this.produtos_serviços.Size = new System.Drawing.Size(160, 21);
+            this.produtos_serviços.TabIndex = 9;
+            this.produtos_serviços.Text = "Produtos e Serviços";
+            this.produtos_serviços.Click += new System.EventHandler(this.produtos_serviços_Click);
             // 
             // cadastro_aluno
             // 
@@ -294,43 +321,25 @@
             this.redes_sociais.TabIndex = 0;
             this.redes_sociais.Text = "Redes Sociais";
             // 
-            // página_sublinhada
-            // 
-            this.página_sublinhada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
-            this.página_sublinhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.página_sublinhada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
-            this.página_sublinhada.Location = new System.Drawing.Point(335, 120);
-            this.página_sublinhada.Name = "página_sublinhada";
-            this.página_sublinhada.Size = new System.Drawing.Size(156, 9);
-            this.página_sublinhada.TabIndex = 8;
-            // 
-            // produtos_serviços
-            // 
-            this.produtos_serviços.AutoSize = true;
-            this.produtos_serviços.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Bold);
-            this.produtos_serviços.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
-            this.produtos_serviços.Location = new System.Drawing.Point(333, 96);
-            this.produtos_serviços.Name = "produtos_serviços";
-            this.produtos_serviços.Size = new System.Drawing.Size(160, 21);
-            this.produtos_serviços.TabIndex = 9;
-            this.produtos_serviços.Text = "Produtos e Serviços";
-            this.produtos_serviços.Click += new System.EventHandler(this.produtos_serviços_Click);
-            // 
             // imagem_produto1
             // 
             this.imagem_produto1.BackColor = System.Drawing.Color.Gray;
-            this.imagem_produto1.Location = new System.Drawing.Point(6, 19);
+            this.imagem_produto1.Image = ((System.Drawing.Image)(resources.GetObject("imagem_produto1.Image")));
+            this.imagem_produto1.Location = new System.Drawing.Point(6, 17);
             this.imagem_produto1.Name = "imagem_produto1";
-            this.imagem_produto1.Size = new System.Drawing.Size(188, 88);
+            this.imagem_produto1.Size = new System.Drawing.Size(188, 96);
+            this.imagem_produto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagem_produto1.TabIndex = 3;
             this.imagem_produto1.TabStop = false;
             // 
             // imagem_produto2
             // 
             this.imagem_produto2.BackColor = System.Drawing.Color.Gray;
-            this.imagem_produto2.Location = new System.Drawing.Point(6, 19);
+            this.imagem_produto2.Image = ((System.Drawing.Image)(resources.GetObject("imagem_produto2.Image")));
+            this.imagem_produto2.Location = new System.Drawing.Point(6, 17);
             this.imagem_produto2.Name = "imagem_produto2";
-            this.imagem_produto2.Size = new System.Drawing.Size(188, 88);
+            this.imagem_produto2.Size = new System.Drawing.Size(188, 96);
+            this.imagem_produto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagem_produto2.TabIndex = 4;
             this.imagem_produto2.TabStop = false;
             // 
@@ -469,6 +478,24 @@
             this.caixa_produto1.TabStop = false;
             this.caixa_produto1.Text = "Caixa de Produto";
             // 
+            // preço_produto1
+            // 
+            this.preço_produto1.AutoSize = true;
+            this.preço_produto1.Location = new System.Drawing.Point(9, 188);
+            this.preço_produto1.Name = "preço_produto1";
+            this.preço_produto1.Size = new System.Drawing.Size(57, 13);
+            this.preço_produto1.TabIndex = 6;
+            this.preço_produto1.Text = "R$ 249,90";
+            // 
+            // subtítulo_produto1
+            // 
+            this.subtítulo_produto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.subtítulo_produto1.Location = new System.Drawing.Point(9, 144);
+            this.subtítulo_produto1.Name = "subtítulo_produto1";
+            this.subtítulo_produto1.Size = new System.Drawing.Size(180, 34);
+            this.subtítulo_produto1.TabIndex = 5;
+            this.subtítulo_produto1.Text = "Peso variável 2–32 kg, manopla confortável e ajuste rápido.";
+            // 
             // título_produto1
             // 
             this.título_produto1.AutoSize = true;
@@ -493,6 +520,34 @@
             this.caixa_produto2.TabStop = false;
             this.caixa_produto2.Text = "Caixa de Produto";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 188);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "R$ 99,90";
+            // 
+            // subtítulo_produto2
+            // 
+            this.subtítulo_produto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.subtítulo_produto2.Location = new System.Drawing.Point(9, 140);
+            this.subtítulo_produto2.Name = "subtítulo_produto2";
+            this.subtítulo_produto2.Size = new System.Drawing.Size(180, 43);
+            this.subtítulo_produto2.TabIndex = 6;
+            this.subtítulo_produto2.Text = "Kit Completo Academia Whey Creatina Pré Treino Energia - Morango";
+            // 
+            // título_produto2
+            // 
+            this.título_produto2.AutoSize = true;
+            this.título_produto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.título_produto2.Location = new System.Drawing.Point(9, 116);
+            this.título_produto2.Name = "título_produto2";
+            this.título_produto2.Size = new System.Drawing.Size(113, 17);
+            this.título_produto2.TabIndex = 5;
+            this.título_produto2.Text = "Banco de Treino";
+            // 
             // caixa_produto3
             // 
             this.caixa_produto3.BackColor = System.Drawing.Color.White;
@@ -507,12 +562,42 @@
             this.caixa_produto3.TabStop = false;
             this.caixa_produto3.Text = "Caixa de Produto";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 188);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "R$ 129,90";
+            // 
+            // subtítulo_produto3
+            // 
+            this.subtítulo_produto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.subtítulo_produto3.Location = new System.Drawing.Point(8, 144);
+            this.subtítulo_produto3.Name = "subtítulo_produto3";
+            this.subtítulo_produto3.Size = new System.Drawing.Size(186, 34);
+            this.subtítulo_produto3.TabIndex = 7;
+            this.subtítulo_produto3.Text = "Kit com alças, âncoras e faixas de resistência progressiva.";
+            // 
+            // título_produto3
+            // 
+            this.título_produto3.AutoSize = true;
+            this.título_produto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.título_produto3.Location = new System.Drawing.Point(9, 116);
+            this.título_produto3.Name = "título_produto3";
+            this.título_produto3.Size = new System.Drawing.Size(145, 17);
+            this.título_produto3.TabIndex = 6;
+            this.título_produto3.Text = "Faixas de Resistência";
+            // 
             // imagem_produto3
             // 
             this.imagem_produto3.BackColor = System.Drawing.Color.Gray;
-            this.imagem_produto3.Location = new System.Drawing.Point(6, 19);
+            this.imagem_produto3.Image = ((System.Drawing.Image)(resources.GetObject("imagem_produto3.Image")));
+            this.imagem_produto3.Location = new System.Drawing.Point(6, 17);
             this.imagem_produto3.Name = "imagem_produto3";
-            this.imagem_produto3.Size = new System.Drawing.Size(188, 88);
+            this.imagem_produto3.Size = new System.Drawing.Size(188, 96);
+            this.imagem_produto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagem_produto3.TabIndex = 4;
             this.imagem_produto3.TabStop = false;
             // 
@@ -530,12 +615,42 @@
             this.caixa_produto4.TabStop = false;
             this.caixa_produto4.Text = "Caixa de Produto";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 188);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 13);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "R$ 79,90";
+            // 
+            // subtítulo_produto4
+            // 
+            this.subtítulo_produto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.subtítulo_produto4.Location = new System.Drawing.Point(8, 144);
+            this.subtítulo_produto4.Name = "subtítulo_produto4";
+            this.subtítulo_produto4.Size = new System.Drawing.Size(186, 34);
+            this.subtítulo_produto4.TabIndex = 8;
+            this.subtítulo_produto4.Text = "Cabo de aço, manoplas ergonômicas e ajuste rápido.";
+            // 
+            // título_produto4
+            // 
+            this.título_produto4.AutoSize = true;
+            this.título_produto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.título_produto4.Location = new System.Drawing.Point(9, 116);
+            this.título_produto4.Name = "título_produto4";
+            this.título_produto4.Size = new System.Drawing.Size(102, 17);
+            this.título_produto4.TabIndex = 7;
+            this.título_produto4.Text = "Corda de Salto";
+            // 
             // imagem_produto4
             // 
             this.imagem_produto4.BackColor = System.Drawing.Color.Gray;
-            this.imagem_produto4.Location = new System.Drawing.Point(6, 19);
+            this.imagem_produto4.Image = ((System.Drawing.Image)(resources.GetObject("imagem_produto4.Image")));
+            this.imagem_produto4.Location = new System.Drawing.Point(6, 17);
             this.imagem_produto4.Name = "imagem_produto4";
-            this.imagem_produto4.Size = new System.Drawing.Size(188, 88);
+            this.imagem_produto4.Size = new System.Drawing.Size(188, 96);
+            this.imagem_produto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagem_produto4.TabIndex = 4;
             this.imagem_produto4.TabStop = false;
             // 
@@ -553,44 +668,23 @@
             this.caixa_produto5.TabStop = false;
             this.caixa_produto5.Text = "Caixa de Produto";
             // 
-            // imagem_produto5
+            // label8
             // 
-            this.imagem_produto5.BackColor = System.Drawing.Color.Gray;
-            this.imagem_produto5.Location = new System.Drawing.Point(6, 19);
-            this.imagem_produto5.Name = "imagem_produto5";
-            this.imagem_produto5.Size = new System.Drawing.Size(188, 88);
-            this.imagem_produto5.TabIndex = 4;
-            this.imagem_produto5.TabStop = false;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 188);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 13);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "R$ 149,90";
             // 
-            // título_produto2
+            // subtítulo_produto5
             // 
-            this.título_produto2.AutoSize = true;
-            this.título_produto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.título_produto2.Location = new System.Drawing.Point(9, 116);
-            this.título_produto2.Name = "título_produto2";
-            this.título_produto2.Size = new System.Drawing.Size(113, 17);
-            this.título_produto2.TabIndex = 5;
-            this.título_produto2.Text = "Banco de Treino";
-            // 
-            // título_produto3
-            // 
-            this.título_produto3.AutoSize = true;
-            this.título_produto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.título_produto3.Location = new System.Drawing.Point(9, 116);
-            this.título_produto3.Name = "título_produto3";
-            this.título_produto3.Size = new System.Drawing.Size(145, 17);
-            this.título_produto3.TabIndex = 6;
-            this.título_produto3.Text = "Faixas de Resistência";
-            // 
-            // título_produto4
-            // 
-            this.título_produto4.AutoSize = true;
-            this.título_produto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.título_produto4.Location = new System.Drawing.Point(9, 116);
-            this.título_produto4.Name = "título_produto4";
-            this.título_produto4.Size = new System.Drawing.Size(102, 17);
-            this.título_produto4.TabIndex = 7;
-            this.título_produto4.Text = "Corda de Salto";
+            this.subtítulo_produto5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.subtítulo_produto5.Location = new System.Drawing.Point(7, 144);
+            this.subtítulo_produto5.Name = "subtítulo_produto5";
+            this.subtítulo_produto5.Size = new System.Drawing.Size(187, 34);
+            this.subtítulo_produto5.TabIndex = 9;
+            this.subtítulo_produto5.Text = "Antiderrapante e fácil de transportar, ideal para alongamento e treino.";
             // 
             // título_produto5
             // 
@@ -602,106 +696,77 @@
             this.título_produto5.TabIndex = 8;
             this.título_produto5.Text = "Tapete de Yoga";
             // 
+            // imagem_produto5
+            // 
+            this.imagem_produto5.BackColor = System.Drawing.Color.Gray;
+            this.imagem_produto5.Image = ((System.Drawing.Image)(resources.GetObject("imagem_produto5.Image")));
+            this.imagem_produto5.Location = new System.Drawing.Point(6, 17);
+            this.imagem_produto5.Name = "imagem_produto5";
+            this.imagem_produto5.Size = new System.Drawing.Size(188, 96);
+            this.imagem_produto5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagem_produto5.TabIndex = 4;
+            this.imagem_produto5.TabStop = false;
+            // 
             // botão_próxima_página
             // 
             this.botão_próxima_página.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(40)))));
             this.botão_próxima_página.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botão_próxima_página.Location = new System.Drawing.Point(737, 533);
+            this.botão_próxima_página.Location = new System.Drawing.Point(623, 537);
             this.botão_próxima_página.Name = "botão_próxima_página";
             this.botão_próxima_página.Size = new System.Drawing.Size(93, 26);
             this.botão_próxima_página.TabIndex = 22;
             this.botão_próxima_página.Text = "Próxima →";
             this.botão_próxima_página.UseVisualStyleBackColor = false;
             // 
-            // subtítulo_produto1
+            // botão_paginação1
             // 
-            this.subtítulo_produto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.subtítulo_produto1.Location = new System.Drawing.Point(9, 144);
-            this.subtítulo_produto1.Name = "subtítulo_produto1";
-            this.subtítulo_produto1.Size = new System.Drawing.Size(180, 34);
-            this.subtítulo_produto1.TabIndex = 5;
-            this.subtítulo_produto1.Text = "Peso variável 2–32 kg, manopla confortável e ajuste rápido.";
+            this.botão_paginação1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botão_paginação1.Location = new System.Drawing.Point(432, 532);
+            this.botão_paginação1.Name = "botão_paginação1";
+            this.botão_paginação1.Size = new System.Drawing.Size(40, 45);
+            this.botão_paginação1.TabIndex = 23;
+            this.botão_paginação1.Text = "1";
+            this.botão_paginação1.UseVisualStyleBackColor = true;
             // 
-            // subtítulo_produto2
+            // botão_paginação2
             // 
-            this.subtítulo_produto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.subtítulo_produto2.Location = new System.Drawing.Point(9, 140);
-            this.subtítulo_produto2.Name = "subtítulo_produto2";
-            this.subtítulo_produto2.Size = new System.Drawing.Size(180, 43);
-            this.subtítulo_produto2.TabIndex = 6;
-            this.subtítulo_produto2.Text = "Kit Completo Academia Whey Creatina Pré Treino Energia - Morango";
+            this.botão_paginação2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.botão_paginação2.Location = new System.Drawing.Point(478, 532);
+            this.botão_paginação2.Name = "botão_paginação2";
+            this.botão_paginação2.Size = new System.Drawing.Size(30, 35);
+            this.botão_paginação2.TabIndex = 24;
+            this.botão_paginação2.Text = "2";
+            this.botão_paginação2.UseVisualStyleBackColor = true;
             // 
-            // subtítulo_produto3
+            // botão_paginação3
             // 
-            this.subtítulo_produto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.subtítulo_produto3.Location = new System.Drawing.Point(8, 144);
-            this.subtítulo_produto3.Name = "subtítulo_produto3";
-            this.subtítulo_produto3.Size = new System.Drawing.Size(186, 34);
-            this.subtítulo_produto3.TabIndex = 7;
-            this.subtítulo_produto3.Text = "Kit com alças, âncoras e faixas de resistência progressiva.";
+            this.botão_paginação3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.botão_paginação3.Location = new System.Drawing.Point(515, 532);
+            this.botão_paginação3.Name = "botão_paginação3";
+            this.botão_paginação3.Size = new System.Drawing.Size(30, 35);
+            this.botão_paginação3.TabIndex = 25;
+            this.botão_paginação3.Text = "3";
+            this.botão_paginação3.UseVisualStyleBackColor = true;
             // 
-            // subtítulo_produto4
+            // botão_paginação4
             // 
-            this.subtítulo_produto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.subtítulo_produto4.Location = new System.Drawing.Point(8, 144);
-            this.subtítulo_produto4.Name = "subtítulo_produto4";
-            this.subtítulo_produto4.Size = new System.Drawing.Size(186, 34);
-            this.subtítulo_produto4.TabIndex = 8;
-            this.subtítulo_produto4.Text = "Cabo de aço, manoplas ergonômicas e ajuste rápido.";
+            this.botão_paginação4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.botão_paginação4.Location = new System.Drawing.Point(551, 532);
+            this.botão_paginação4.Name = "botão_paginação4";
+            this.botão_paginação4.Size = new System.Drawing.Size(30, 35);
+            this.botão_paginação4.TabIndex = 26;
+            this.botão_paginação4.Text = "4";
+            this.botão_paginação4.UseVisualStyleBackColor = true;
             // 
-            // subtítulo_produto5
+            // botão_paginação5
             // 
-            this.subtítulo_produto5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.subtítulo_produto5.Location = new System.Drawing.Point(7, 144);
-            this.subtítulo_produto5.Name = "subtítulo_produto5";
-            this.subtítulo_produto5.Size = new System.Drawing.Size(187, 34);
-            this.subtítulo_produto5.TabIndex = 9;
-            this.subtítulo_produto5.Text = "Antiderrapante e fácil de transportar, ideal para alongamento e treino.";
-            // 
-            // preço_produto1
-            // 
-            this.preço_produto1.AutoSize = true;
-            this.preço_produto1.Location = new System.Drawing.Point(9, 188);
-            this.preço_produto1.Name = "preço_produto1";
-            this.preço_produto1.Size = new System.Drawing.Size(57, 13);
-            this.preço_produto1.TabIndex = 6;
-            this.preço_produto1.Text = "R$ 249,90";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 188);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "R$ 99,90";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 188);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "R$ 129,90";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "R$ 79,90";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 188);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 13);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "R$ 149,90";
+            this.botão_paginação5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.botão_paginação5.Location = new System.Drawing.Point(587, 532);
+            this.botão_paginação5.Name = "botão_paginação5";
+            this.botão_paginação5.Size = new System.Drawing.Size(30, 35);
+            this.botão_paginação5.TabIndex = 27;
+            this.botão_paginação5.Text = "5";
+            this.botão_paginação5.UseVisualStyleBackColor = true;
             // 
             // Página_3
             // 
@@ -709,6 +774,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(1079, 691);
+            this.Controls.Add(this.botão_paginação5);
+            this.Controls.Add(this.botão_paginação4);
+            this.Controls.Add(this.botão_paginação3);
+            this.Controls.Add(this.botão_paginação2);
+            this.Controls.Add(this.botão_paginação1);
             this.Controls.Add(this.botão_próxima_página);
             this.Controls.Add(this.caixa_produto5);
             this.Controls.Add(this.caixa_produto4);
@@ -816,5 +886,10 @@
         private System.Windows.Forms.Label subtítulo_produto4;
         private System.Windows.Forms.Label subtítulo_produto5;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button botão_paginação1;
+        private System.Windows.Forms.Button botão_paginação2;
+        private System.Windows.Forms.Button botão_paginação3;
+        private System.Windows.Forms.Button botão_paginação4;
+        private System.Windows.Forms.Button botão_paginação5;
     }
 }

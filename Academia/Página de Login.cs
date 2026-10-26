@@ -7,14 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;//Importar os elementos do MySQL
 
 namespace Academia
 {
     public partial class Página_Login : Form
     {
+
+        DAO bd;
+
         public Página_Login()
         {
             InitializeComponent();
+            bd = new DAO();
         }
-    }
-}
+
+        private void Página_Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botão_login_Click(object sender, EventArgs e)
+        {
+
+        }
+    }//fim da classe
+}//fim do projeto

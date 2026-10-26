@@ -86,3 +86,5 @@ C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.cspr
 C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.exe
 C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.pdb
 C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.exe.config
+C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.Página_Cadastro1.resources
+C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.Página_Cadastro2.resources

@@ -173,6 +173,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
     <Compile Include="DAO.cs" />
     <Compile Include="Navegacao.cs" />
     <Compile Include="Página 1.cs">
@@ -186,6 +187,18 @@
     </Compile>
     <Compile Include="Página 2.Designer.cs">
       <DependentUpon>Página 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Página de Cadastro 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Página de Cadastro 1.Designer.cs">
+      <DependentUpon>Página de Cadastro 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Página de Cadastro 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Página de Cadastro 2.Designer.cs">
+      <DependentUpon>Página de Cadastro 2.cs</DependentUpon>
     </Compile>
     <Compile Include="Página de Login.cs">
       <SubType>Form</SubType>
@@ -212,6 +225,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Página 2.resx">
       <DependentUpon>Página 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Página de Cadastro 1.resx">
+      <DependentUpon>Página de Cadastro 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Página de Cadastro 2.resx">
+      <DependentUpon>Página de Cadastro 2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Página de Login.resx">
       <DependentUpon>Página de Login.cs</DependentUpon>

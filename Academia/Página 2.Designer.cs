@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Página_2));
             this.panel5 = new System.Windows.Forms.Panel();
+            this.frase_footer = new System.Windows.Forms.Label();
+            this.logo_yotube = new System.Windows.Forms.PictureBox();
+            this.logo_twitter = new System.Windows.Forms.PictureBox();
+            this.logo_instagram = new System.Windows.Forms.PictureBox();
+            this.logo_facebook = new System.Windows.Forms.PictureBox();
+            this.redes_sociais = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -53,21 +59,19 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.frase_footer = new System.Windows.Forms.Label();
-            this.logo_yotube = new System.Windows.Forms.PictureBox();
-            this.logo_twitter = new System.Windows.Forms.PictureBox();
-            this.logo_instagram = new System.Windows.Forms.PictureBox();
-            this.logo_facebook = new System.Windows.Forms.PictureBox();
-            this.redes_sociais = new System.Windows.Forms.Label();
+            this.cadastro_aluno = new System.Windows.Forms.Button();
+            this.login_aluno = new System.Windows.Forms.Button();
+            this.ícone = new System.Windows.Forms.PictureBox();
             this.página_sublinhada = new System.Windows.Forms.TextBox();
             this.contato = new System.Windows.Forms.Label();
             this.produtos_serviços = new System.Windows.Forms.Label();
             this.planos = new System.Windows.Forms.Label();
             this.página_inicial = new System.Windows.Forms.Label();
-            this.ícone = new System.Windows.Forms.PictureBox();
-            this.cadastro_aluno = new System.Windows.Forms.Button();
-            this.login_aluno = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_yotube)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_twitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_instagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -75,10 +79,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_yotube)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_twitter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_instagram)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ícone)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,12 +97,77 @@
             this.panel5.Size = new System.Drawing.Size(1079, 90);
             this.panel5.TabIndex = 12;
             // 
+            // frase_footer
+            // 
+            this.frase_footer.AutoSize = true;
+            this.frase_footer.Font = new System.Drawing.Font("Nirmala Text", 8.25F);
+            this.frase_footer.Location = new System.Drawing.Point(377, 77);
+            this.frase_footer.Name = "frase_footer";
+            this.frase_footer.Size = new System.Drawing.Size(343, 13);
+            this.frase_footer.TabIndex = 11;
+            this.frase_footer.Text = "Academy City – Treinamento, recuperação e bem-estar para todos.";
+            // 
+            // logo_yotube
+            // 
+            this.logo_yotube.BackColor = System.Drawing.Color.White;
+            this.logo_yotube.Image = ((System.Drawing.Image)(resources.GetObject("logo_yotube.Image")));
+            this.logo_yotube.Location = new System.Drawing.Point(643, 28);
+            this.logo_yotube.Name = "logo_yotube";
+            this.logo_yotube.Size = new System.Drawing.Size(40, 40);
+            this.logo_yotube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo_yotube.TabIndex = 10;
+            this.logo_yotube.TabStop = false;
+            // 
+            // logo_twitter
+            // 
+            this.logo_twitter.BackColor = System.Drawing.Color.White;
+            this.logo_twitter.Image = ((System.Drawing.Image)(resources.GetObject("logo_twitter.Image")));
+            this.logo_twitter.Location = new System.Drawing.Point(557, 28);
+            this.logo_twitter.Name = "logo_twitter";
+            this.logo_twitter.Size = new System.Drawing.Size(40, 40);
+            this.logo_twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logo_twitter.TabIndex = 9;
+            this.logo_twitter.TabStop = false;
+            // 
+            // logo_instagram
+            // 
+            this.logo_instagram.BackColor = System.Drawing.Color.White;
+            this.logo_instagram.Image = ((System.Drawing.Image)(resources.GetObject("logo_instagram.Image")));
+            this.logo_instagram.Location = new System.Drawing.Point(480, 28);
+            this.logo_instagram.Name = "logo_instagram";
+            this.logo_instagram.Size = new System.Drawing.Size(40, 40);
+            this.logo_instagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo_instagram.TabIndex = 8;
+            this.logo_instagram.TabStop = false;
+            // 
+            // logo_facebook
+            // 
+            this.logo_facebook.BackColor = System.Drawing.Color.White;
+            this.logo_facebook.Image = ((System.Drawing.Image)(resources.GetObject("logo_facebook.Image")));
+            this.logo_facebook.Location = new System.Drawing.Point(395, 28);
+            this.logo_facebook.Name = "logo_facebook";
+            this.logo_facebook.Size = new System.Drawing.Size(40, 40);
+            this.logo_facebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo_facebook.TabIndex = 7;
+            this.logo_facebook.TabStop = false;
+            // 
+            // redes_sociais
+            // 
+            this.redes_sociais.AutoSize = true;
+            this.redes_sociais.Font = new System.Drawing.Font("Nirmala Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.redes_sociais.ForeColor = System.Drawing.Color.Black;
+            this.redes_sociais.Location = new System.Drawing.Point(498, 7);
+            this.redes_sociais.Name = "redes_sociais";
+            this.redes_sociais.Size = new System.Drawing.Size(76, 13);
+            this.redes_sociais.TabIndex = 6;
+            this.redes_sociais.Text = "Redes Sociais";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(84, 274);
+            this.button1.Location = new System.Drawing.Point(99, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -185,7 +250,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(83, 274);
+            this.button2.Location = new System.Drawing.Point(93, 274);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -206,9 +271,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(15, 72);
+            this.pictureBox3.Location = new System.Drawing.Point(15, 66);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(237, 140);
+            this.pictureBox3.Size = new System.Drawing.Size(237, 146);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
@@ -240,7 +305,7 @@
             this.label9.BackColor = System.Drawing.SystemColors.Desktop;
             this.label9.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(84, 21);
+            this.label9.Location = new System.Drawing.Point(77, 20);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 21);
             this.label9.TabIndex = 0;
@@ -299,7 +364,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(99, 274);
+            this.button3.Location = new System.Drawing.Point(88, 274);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
@@ -332,7 +397,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Nirmala Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(43, 42);
+            this.label10.Location = new System.Drawing.Point(27, 42);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(200, 21);
             this.label10.TabIndex = 1;
@@ -369,77 +434,46 @@
             this.panel1.Size = new System.Drawing.Size(1079, 130);
             this.panel1.TabIndex = 6;
             // 
-            // frase_footer
+            // cadastro_aluno
             // 
-            this.frase_footer.AutoSize = true;
-            this.frase_footer.Font = new System.Drawing.Font("Nirmala Text", 8.25F);
-            this.frase_footer.Location = new System.Drawing.Point(377, 77);
-            this.frase_footer.Name = "frase_footer";
-            this.frase_footer.Size = new System.Drawing.Size(343, 13);
-            this.frase_footer.TabIndex = 11;
-            this.frase_footer.Text = "Academy City – Treinamento, recuperação e bem-estar para todos.";
+            this.cadastro_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(12)))));
+            this.cadastro_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cadastro_aluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.cadastro_aluno.Location = new System.Drawing.Point(935, 34);
+            this.cadastro_aluno.Name = "cadastro_aluno";
+            this.cadastro_aluno.Size = new System.Drawing.Size(132, 27);
+            this.cadastro_aluno.TabIndex = 14;
+            this.cadastro_aluno.Text = "Quero cadastrar";
+            this.cadastro_aluno.UseVisualStyleBackColor = false;
             // 
-            // logo_yotube
+            // login_aluno
             // 
-            this.logo_yotube.BackColor = System.Drawing.Color.White;
-            this.logo_yotube.Image = ((System.Drawing.Image)(resources.GetObject("logo_yotube.Image")));
-            this.logo_yotube.Location = new System.Drawing.Point(643, 28);
-            this.logo_yotube.Name = "logo_yotube";
-            this.logo_yotube.Size = new System.Drawing.Size(40, 40);
-            this.logo_yotube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo_yotube.TabIndex = 10;
-            this.logo_yotube.TabStop = false;
+            this.login_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
+            this.login_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_aluno.ForeColor = System.Drawing.Color.White;
+            this.login_aluno.Location = new System.Drawing.Point(783, 34);
+            this.login_aluno.Name = "login_aluno";
+            this.login_aluno.Size = new System.Drawing.Size(132, 27);
+            this.login_aluno.TabIndex = 13;
+            this.login_aluno.Text = "Já sou Aluno";
+            this.login_aluno.UseVisualStyleBackColor = false;
             // 
-            // logo_twitter
+            // ícone
             // 
-            this.logo_twitter.BackColor = System.Drawing.Color.White;
-            this.logo_twitter.Image = ((System.Drawing.Image)(resources.GetObject("logo_twitter.Image")));
-            this.logo_twitter.Location = new System.Drawing.Point(557, 28);
-            this.logo_twitter.Name = "logo_twitter";
-            this.logo_twitter.Size = new System.Drawing.Size(40, 40);
-            this.logo_twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.logo_twitter.TabIndex = 9;
-            this.logo_twitter.TabStop = false;
-            // 
-            // logo_instagram
-            // 
-            this.logo_instagram.BackColor = System.Drawing.Color.White;
-            this.logo_instagram.Image = ((System.Drawing.Image)(resources.GetObject("logo_instagram.Image")));
-            this.logo_instagram.Location = new System.Drawing.Point(480, 28);
-            this.logo_instagram.Name = "logo_instagram";
-            this.logo_instagram.Size = new System.Drawing.Size(40, 40);
-            this.logo_instagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo_instagram.TabIndex = 8;
-            this.logo_instagram.TabStop = false;
-            // 
-            // logo_facebook
-            // 
-            this.logo_facebook.BackColor = System.Drawing.Color.White;
-            this.logo_facebook.Image = ((System.Drawing.Image)(resources.GetObject("logo_facebook.Image")));
-            this.logo_facebook.Location = new System.Drawing.Point(395, 28);
-            this.logo_facebook.Name = "logo_facebook";
-            this.logo_facebook.Size = new System.Drawing.Size(40, 40);
-            this.logo_facebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo_facebook.TabIndex = 7;
-            this.logo_facebook.TabStop = false;
-            // 
-            // redes_sociais
-            // 
-            this.redes_sociais.AutoSize = true;
-            this.redes_sociais.Font = new System.Drawing.Font("Nirmala Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.redes_sociais.ForeColor = System.Drawing.Color.Black;
-            this.redes_sociais.Location = new System.Drawing.Point(498, 7);
-            this.redes_sociais.Name = "redes_sociais";
-            this.redes_sociais.Size = new System.Drawing.Size(76, 13);
-            this.redes_sociais.TabIndex = 6;
-            this.redes_sociais.Text = "Redes Sociais";
+            this.ícone.BackColor = System.Drawing.Color.White;
+            this.ícone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ícone.BackgroundImage")));
+            this.ícone.Location = new System.Drawing.Point(12, 9);
+            this.ícone.Name = "ícone";
+            this.ícone.Size = new System.Drawing.Size(166, 78);
+            this.ícone.TabIndex = 12;
+            this.ícone.TabStop = false;
             // 
             // página_sublinhada
             // 
             this.página_sublinhada.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
             this.página_sublinhada.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.página_sublinhada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(213)))), ((int)(((byte)(128)))));
-            this.página_sublinhada.Location = new System.Drawing.Point(216, 121);
+            this.página_sublinhada.Location = new System.Drawing.Point(213, 121);
             this.página_sublinhada.Name = "página_sublinhada";
             this.página_sublinhada.Size = new System.Drawing.Size(57, 9);
             this.página_sublinhada.TabIndex = 8;
@@ -492,40 +526,6 @@
             this.página_inicial.Text = "Página Inicial";
             this.página_inicial.Click += new System.EventHandler(this.página_inicial_Click);
             // 
-            // ícone
-            // 
-            this.ícone.BackColor = System.Drawing.Color.White;
-            this.ícone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ícone.BackgroundImage")));
-            this.ícone.Location = new System.Drawing.Point(12, 9);
-            this.ícone.Name = "ícone";
-            this.ícone.Size = new System.Drawing.Size(166, 78);
-            this.ícone.TabIndex = 12;
-            this.ícone.TabStop = false;
-            // 
-            // cadastro_aluno
-            // 
-            this.cadastro_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(206)))), ((int)(((byte)(12)))));
-            this.cadastro_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadastro_aluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.cadastro_aluno.Location = new System.Drawing.Point(935, 34);
-            this.cadastro_aluno.Name = "cadastro_aluno";
-            this.cadastro_aluno.Size = new System.Drawing.Size(132, 27);
-            this.cadastro_aluno.TabIndex = 14;
-            this.cadastro_aluno.Text = "Quero cadastrar";
-            this.cadastro_aluno.UseVisualStyleBackColor = false;
-            // 
-            // login_aluno
-            // 
-            this.login_aluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(85)))), ((int)(((byte)(0)))));
-            this.login_aluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_aluno.ForeColor = System.Drawing.Color.White;
-            this.login_aluno.Location = new System.Drawing.Point(783, 34);
-            this.login_aluno.Name = "login_aluno";
-            this.login_aluno.Size = new System.Drawing.Size(132, 27);
-            this.login_aluno.TabIndex = 13;
-            this.login_aluno.Text = "Já sou Aluno";
-            this.login_aluno.UseVisualStyleBackColor = false;
-            // 
             // Página_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,6 +546,10 @@
             this.Load += new System.EventHandler(this.Página_2_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_yotube)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_twitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_instagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -557,10 +561,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_yotube)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_twitter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_instagram)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logo_facebook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ícone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
