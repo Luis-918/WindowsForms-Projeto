@@ -173,6 +173,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Administração 2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +208,29 @@
     </Compile>
     <Compile Include="Navegacao.cs" />
     <Compile Include="Professor.cs" />
+=======
+    <Compile Include="Administração de Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administração de Cadastro.Designer.cs">
+      <DependentUpon>Administração de Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aluno.cs" />
+    <Compile Include="Administração de Consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administração de Consultar.Designer.cs">
+      <DependentUpon>Administração de Consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO.cs" />
+    <Compile Include="Exclusão.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exclusão.Designer.cs">
+      <DependentUpon>Exclusão.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navegacao.cs" />
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
     <Compile Include="Página 1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +243,7 @@
     <Compile Include="Página 2.Designer.cs">
       <DependentUpon>Página 2.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Cadastro de Aluno 1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +255,19 @@
     </Compile>
     <Compile Include="Cadastro de Aluno 2.Designer.cs">
       <DependentUpon>Cadastro de Aluno 2.cs</DependentUpon>
+=======
+    <Compile Include="Página de Cadastro 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Página de Cadastro 1.Designer.cs">
+      <DependentUpon>Página de Cadastro 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Página de Cadastro 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Página de Cadastro 2.Designer.cs">
+      <DependentUpon>Página de Cadastro 2.cs</DependentUpon>
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
     </Compile>
     <Compile Include="Página de Login.cs">
       <SubType>Form</SubType>
@@ -251,6 +289,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Página Inicial 1.1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +310,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Administração de Cadastro.resx">
+      <DependentUpon>Administração de Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administração de Consultar.resx">
+      <DependentUpon>Administração de Consultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exclusão.resx">
+      <DependentUpon>Exclusão.cs</DependentUpon>
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
     </EmbeddedResource>
     <EmbeddedResource Include="Página 1.resx">
       <DependentUpon>Página 1.cs</DependentUpon>
@@ -278,11 +327,19 @@
     <EmbeddedResource Include="Página 2.resx">
       <DependentUpon>Página 2.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Cadastro de Aluno 1.resx">
       <DependentUpon>Cadastro de Aluno 1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastro de Aluno 2.resx">
       <DependentUpon>Cadastro de Aluno 2.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Página de Cadastro 1.resx">
+      <DependentUpon>Página de Cadastro 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Página de Cadastro 2.resx">
+      <DependentUpon>Página de Cadastro 2.cs</DependentUpon>
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
     </EmbeddedResource>
     <EmbeddedResource Include="Página de Login.resx">
       <DependentUpon>Página de Login.cs</DependentUpon>
@@ -302,9 +359,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="Página Inicial 1.1.resx">
       <DependentUpon>Página Inicial 1.1.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

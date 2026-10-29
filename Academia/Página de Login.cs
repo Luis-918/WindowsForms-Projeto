@@ -30,7 +30,11 @@ namespace Academia
 
         private void botão_login_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Navegacao.IrPara<Página_Inicial_1>(this);
+=======
+
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
         }
 
         private void botão_cadastro_Click(object sender, EventArgs e)

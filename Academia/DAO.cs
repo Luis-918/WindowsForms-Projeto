@@ -1,6 +1,9 @@
 ﻿using MySql.Data.MySqlClient;//Importar os elementos do MySQL
 using System;
+<<<<<<< HEAD
 using System.Data;
+=======
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
 using System.Windows.Forms;
 
 namespace Academia
@@ -50,6 +53,7 @@ namespace Academia
             }
         }//fim do método cadastrar
 
+<<<<<<< HEAD
         public string CadastrarProfessor(string nome, string cpf, string telefone,
                                  DateTime dataNascimento, string sexo,
                                  decimal peso, decimal altura)
@@ -72,6 +76,8 @@ namespace Academia
             }
         }//fim do método cadastrar professor
 
+=======
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
         public void PreencherVetor()
         {
             string consultar = "select codigo, CPF, nome, telefone from aluno";
@@ -148,6 +154,7 @@ namespace Academia
             }//fim do if
         }//fim do Atualizar
 
+<<<<<<< HEAD
         public DataTable Consultar()
         {
             string consultar = "select codigo, nome, CPF, telefone, data_nascimento, " +
@@ -162,6 +169,8 @@ namespace Academia
             return tabela;
         }//fim do Consultar
 
+=======
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
         public string Excluir(int codigoAluno)
         {
             string query = "delete from aluno where codigo = @codigo";

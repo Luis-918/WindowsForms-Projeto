@@ -711,7 +711,11 @@
             // 
             this.botão_próxima_página.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(40)))));
             this.botão_próxima_página.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.botão_próxima_página.Location = new System.Drawing.Point(646, 542);
+=======
+            this.botão_próxima_página.Location = new System.Drawing.Point(623, 537);
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
             this.botão_próxima_página.Name = "botão_próxima_página";
             this.botão_próxima_página.Size = new System.Drawing.Size(93, 26);
             this.botão_próxima_página.TabIndex = 22;
@@ -721,7 +725,11 @@
             // botão_paginação1
             // 
             this.botão_paginação1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.botão_paginação1.Location = new System.Drawing.Point(416, 532);
+=======
+            this.botão_paginação1.Location = new System.Drawing.Point(432, 532);
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
             this.botão_paginação1.Name = "botão_paginação1";
             this.botão_paginação1.Size = new System.Drawing.Size(40, 45);
             this.botão_paginação1.TabIndex = 23;
@@ -731,9 +739,15 @@
             // botão_paginação2
             // 
             this.botão_paginação2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.botão_paginação2.Location = new System.Drawing.Point(462, 532);
             this.botão_paginação2.Name = "botão_paginação2";
             this.botão_paginação2.Size = new System.Drawing.Size(40, 45);
+=======
+            this.botão_paginação2.Location = new System.Drawing.Point(478, 532);
+            this.botão_paginação2.Name = "botão_paginação2";
+            this.botão_paginação2.Size = new System.Drawing.Size(30, 35);
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
             this.botão_paginação2.TabIndex = 24;
             this.botão_paginação2.Text = "2";
             this.botão_paginação2.UseVisualStyleBackColor = true;
@@ -741,9 +755,15 @@
             // botão_paginação3
             // 
             this.botão_paginação3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.botão_paginação3.Location = new System.Drawing.Point(508, 532);
             this.botão_paginação3.Name = "botão_paginação3";
             this.botão_paginação3.Size = new System.Drawing.Size(40, 45);
+=======
+            this.botão_paginação3.Location = new System.Drawing.Point(515, 532);
+            this.botão_paginação3.Name = "botão_paginação3";
+            this.botão_paginação3.Size = new System.Drawing.Size(30, 35);
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
             this.botão_paginação3.TabIndex = 25;
             this.botão_paginação3.Text = "3";
             this.botão_paginação3.UseVisualStyleBackColor = true;
@@ -751,9 +771,15 @@
             // botão_paginação4
             // 
             this.botão_paginação4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.botão_paginação4.Location = new System.Drawing.Point(554, 532);
             this.botão_paginação4.Name = "botão_paginação4";
             this.botão_paginação4.Size = new System.Drawing.Size(40, 45);
+=======
+            this.botão_paginação4.Location = new System.Drawing.Point(551, 532);
+            this.botão_paginação4.Name = "botão_paginação4";
+            this.botão_paginação4.Size = new System.Drawing.Size(30, 35);
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
             this.botão_paginação4.TabIndex = 26;
             this.botão_paginação4.Text = "4";
             this.botão_paginação4.UseVisualStyleBackColor = true;
@@ -761,9 +787,15 @@
             // botão_paginação5
             // 
             this.botão_paginação5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+<<<<<<< HEAD
             this.botão_paginação5.Location = new System.Drawing.Point(600, 532);
             this.botão_paginação5.Name = "botão_paginação5";
             this.botão_paginação5.Size = new System.Drawing.Size(40, 45);
+=======
+            this.botão_paginação5.Location = new System.Drawing.Point(587, 532);
+            this.botão_paginação5.Name = "botão_paginação5";
+            this.botão_paginação5.Size = new System.Drawing.Size(30, 35);
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
             this.botão_paginação5.TabIndex = 27;
             this.botão_paginação5.Text = "5";
             this.botão_paginação5.UseVisualStyleBackColor = true;

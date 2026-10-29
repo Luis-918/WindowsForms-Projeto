@@ -88,6 +88,7 @@ C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.pdb
 C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.exe.config
 C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.Página_Cadastro1.resources
 C:\Users\luis.esbonifacio\source\repos\Academia\Academia\obj\Debug\Academia.Página_Cadastro2.resources
+<<<<<<< HEAD
 C:\Users\luis.esbonifacio\source\repos\WindowsForms-Projeto-main\Academia\obj\Debug\Academia.csproj.AssemblyReference.cache
 C:\Users\luis.esbonifacio\source\repos\WindowsForms-Projeto-main\Academia\obj\Debug\Academia.exe.config
 C:\Users\luis.esbonifacio\source\repos\WindowsForms-Projeto-main\Academia\obj\Debug\Academia.exe
@@ -184,3 +185,5 @@ C:\Users\luis.esbonifacio\source\repos\WindowsForms-Projeto-main\Academia\obj\De
 C:\Users\luis.esbonifacio\source\repos\WindowsForms-Projeto-main\Academia\obj\Debug\Academia.Administração_2.resources
 C:\Users\luis.esbonifacio\source\repos\WindowsForms-Projeto-main\Academia\obj\Debug\Academia.Menu.resources
 C:\Users\luis.esbonifacio\source\repos\WindowsForms-Projeto-main\Academia\obj\Debug\Academia.Página_Inicial_1.resources
+=======
+>>>>>>> 8c5d3b982d58c3584424456d65f986d9b1019839
